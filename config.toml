@@ -21,7 +21,7 @@ disqusShortname = "yourdiscussshortname"
     gravatar = "john.doe@example.com"
     footerContent = "Talk is cheap, show me the code..."
 
-    dateFormat = "January 2, 2006"
+    dateFormat = "2006-01-02 15:04:05"
 
     hideFooter = false
     hideCredits = false
@@ -85,22 +85,6 @@ disqusShortname = "yourdiscussshortname"
     icon = "fa fa-github"
     weight = 1
     url = "https://github.com/zhulingbiezhi/"
-[[params.social]]
-    name = "Twitter"
-    icon = "fa fa-twitter"
-    weight = 3
-    url = "https://twitter.com/johndoe/"
-[[params.social]]
-    name = "LinkedIn"
-    icon = "fa fa-linkedin"
-    weight = 4
-    url = "https://www.linkedin.com/in/johndoe/"
-[[params.social]]
-    name = "Medium"
-    icon = "fa fa-medium"
-    weight = 5
-    url = "https://medium.com/@johndoe"
-
 
 
 [languages]
@@ -119,7 +103,7 @@ disqusShortname = "yourdiscussshortname"
             [[languages.cn.menu.main]]
             name = "博客"
             weight = 2
-            url = "posts/"
+            url = "post/"
 
             [[languages.cn.menu.main]]
             name = "项目"
@@ -153,7 +137,7 @@ disqusShortname = "yourdiscussshortname"
             [[languages.en.menu.main]]
             name = "Blog"
             weight = 2
-            url = "posts/"
+            url = "post/"
 
             [[languages.en.menu.main]]
             name = "Projects"
