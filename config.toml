@@ -1,10 +1,9 @@
-baseURL = "http://www.example.com"
-title = "johndoe"
+baseURL = "http://www.go1002.com"
 
 theme = "hugo-coder"
 
-languageCode = "en"
-defaultContentLanguage = "en"
+languageCode = "cn"
+defaultContentLanguage = "cn"
 
 paginate = 20
 
@@ -15,13 +14,12 @@ pygmentsCodeFencesGuessSyntax = true
 disqusShortname = "yourdiscussshortname"
 
 [params]
-    author = "John Doe"
-    description = "John Doe's personal website"
+    author = "去去"
     keywords = "blog,developer,personal"
-    info = "Full Stack DevOps and Magician"
+    info = "Golang/C++/Python"
     avatarURL = "images/avatar.jpg"
-    #gravatar = "john.doe@example.com"
-    footerContent = "Enter a text here."
+    gravatar = "john.doe@example.com"
+    footerContent = "Talk is cheap, show me the code..."
 
     dateFormat = "January 2, 2006"
 
@@ -68,7 +66,7 @@ disqusShortname = "yourdiscussshortname"
 
 # If you want to use plausible(https://plausible.io) for analytics, add this section
 [params.plausibleAnalytics]
-    domain = "example.com"
+    domain = "go1002.com"
     # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
     serverURL = "analytics.example.com"
 
@@ -86,12 +84,7 @@ disqusShortname = "yourdiscussshortname"
     name = "Github"
     icon = "fa fa-github"
     weight = 1
-    url = "https://github.com/johndoe/"
-[[params.social]]
-    name = "Gitlab"
-    icon = "fa fa-gitlab"
-    weight = 2
-    url = "https://gitlab.com/johndoe/"
+    url = "https://github.com/zhulingbiezhi/"
 [[params.social]]
     name = "Twitter"
     icon = "fa fa-twitter"
@@ -107,18 +100,48 @@ disqusShortname = "yourdiscussshortname"
     icon = "fa fa-medium"
     weight = 5
     url = "https://medium.com/@johndoe"
-[[params.social]]
-    name = "RSS"
-    icon = "fa fa-rss"
-    weight = 6
-    url = "https://myhugosite.com/index.xml"
-    rel = "alternate"
-    type = "application/rss+xml"
+
 
 
 [languages]
+    [languages.cn]
+        languageName = "中文"
+        title = "去去云博客"
+    	description = "去去云博客"
+
+        [languages.cn.menu]
+
+            [[languages.cn.menu.main]]
+            name = "关于"
+            weight = 1
+            url = "about/"
+
+            [[languages.cn.menu.main]]
+            name = "博客"
+            weight = 2
+            url = "posts/"
+
+            [[languages.cn.menu.main]]
+            name = "项目"
+            weight = 3
+            url = "projects/"
+
+            [[languages.cn.menu.main]]
+            name = "联系方式"
+            weight = 5
+            url = "contact/"
+
+
     [languages.en]
         languageName = "English"
+        title = "Cloud blog of ququ"
+
+        [languages.en.params]
+            author = "ququ"
+            info = "Golang/C++/Python"
+            description = "Cloud blog of ququ"
+            keywords = "blog,desenvolvedor,pessoal"
+            footerContent = "Talk is cheap, show me the code..."
 
         [languages.en.menu]
 
@@ -138,40 +161,6 @@ disqusShortname = "yourdiscussshortname"
             url = "projects/"
 
             [[languages.en.menu.main]]
-            name = "Contact me"
-            weight = 5
-            url = "contact/"
-
-
-    [languages.pt-br]
-        languageName = "Português"
-        title = "João Ninguém"
-
-        [languages.pt-br.params]
-            author = "João Ninguém"
-            info = "Full Stack DevOps e Mágico"
-            description = "Sítio pessoal de João Ninguém"
-            keywords = "blog,desenvolvedor,pessoal"
-            footerContent = "Coloque algum texto aqui."
-
-        [languages.pt-br.menu]
-
-            [[languages.pt-br.menu.main]]
-            name = "Sobre"
-            weight = 1
-            url = "about/"
-
-            [[languages.pt-br.menu.main]]
-            name = "Blog"
-            weight = 2
-            url = "posts/"
-
-            [[languages.pt-br.menu.main]]
-            name = "Projetos"
-            weight = 3
-            url = "projects/"
-
-            [[languages.pt-br.menu.main]]
-            name = "Contato"
+            name = "Contact"
             weight = 5
             url = "contact/"
